@@ -1,0 +1,107 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 1.8em;
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  z-index: 1;
+  border-bottom: 1.5px solid black;
+}
+.navbar button {
+  height: 100%;
+  font-family: "Oswald";
+  font-size: 18px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  border: none;
+  background-color: white;
+  padding: 0 20px;
+  transition-duration: 1s;
+  width: 100px;
+}
+.navbar button:hover {
+  cursor: pointer;
+  background-color: #cdcdcd;
+}
+.navbar a {
+  padding: 0;
+  height: 100%;
+  border: none;
+}
+.navbar img {
+  height: 80%;
+  margin: 4px 10px 0px 0px;
+}
+
+.burger-wrap {
+  display: none;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/philippine-flag.jpeg");
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 80%;
+}
+.home .container {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home .container .fsa,
+.home .container .ou {
+  background-color: white;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.home .container .ou {
+  border: 1.5px solid black;
+  font-size: 18px;
+  letter-spacing: 6px;
+  text-indent: 6px;
+}
+.home .container .fsa {
+  border: 1.5px solid black;
+  font-family: "Oswald";
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  line-height: 40px;
+  text-indent: 4px;
+}
+
+.footer {
+  padding: 5px 0px;
+  text-align: center;
+  border-top: 1.5px solid black;
+  font-size: 10px;
+  line-height: 14px;
+  color: gray;
+}
+
+/*# sourceMappingURL=home-desktop.css.map */
