@@ -163,16 +163,15 @@ html {
   padding: 0.3rem;
   text-transform: uppercase;
   text-align: center;
+  max-width: 80%;
 }
 .home .container .ou {
-  max-width: 80%;
   border: 1.5px solid black;
   font-size: 14px;
   letter-spacing: 6px;
   text-indent: 6px;
 }
 .home .container .fsa {
-  max-width: 80%;
   border: 1.5px solid black;
   font-family: "Oswald";
   margin-top: 10px;
@@ -181,6 +180,23 @@ html {
   letter-spacing: 4px;
   line-height: 40px;
   text-indent: 4px;
+}
+.home .container .socials {
+  margin-top: 20px;
+}
+.home .container .socials .fab {
+  background-color: white;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  transition-duration: 0.5s;
+  color: black;
+}
+.home .container .socials .fab:hover {
+  cursor: pointer;
+  background-color: #cdcdcd;
 }
 
 .footer {

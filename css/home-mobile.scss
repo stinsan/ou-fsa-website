@@ -182,10 +182,10 @@ html {
       padding: 0.3rem;
       text-transform: uppercase;
       text-align: center;
+      max-width: 80%;
     }
 
     .ou {
-      max-width: 80%;
       border: 1.5px solid black;
       font-size: 14px;
       letter-spacing: 6px;
@@ -193,7 +193,6 @@ html {
     }
 
     .fsa {
-      max-width: 80%;
       border: 1.5px solid black;
       font-family: "Oswald";
       margin-top: 10px;
@@ -202,6 +201,26 @@ html {
       letter-spacing: 4px;
       line-height: 40px;
       text-indent: 4px; // Same as letter-spacing
+    }
+
+    .socials {
+      margin-top: 20px;
+
+      .fab {
+        background-color: white;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1.5px solid black;
+        border-radius: 50%;
+        font-size: 30px;
+        transition-duration: 0.5s;
+        color: black;
+      }
+
+      .fab:hover {
+        cursor: pointer;
+        background-color: rgb(205, 205, 205);
+      }
     }
   }
 }
