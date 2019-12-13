@@ -1,0 +1,142 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 1.8em;
+  background-color: white;
+  color: black;
+}
+
+.burger-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.burger-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 30px;
+  height: 50px;
+  margin: 1rem;
+  opacity: 0;
+}
+.burger-wrap .burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 30px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger-wrap .burger > div {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.burger-wrap .burger > div:after,
+.burger-wrap .burger > div:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 5px;
+  background: inherit;
+}
+.burger-wrap .burger > div:after {
+  top: 10px;
+}
+.burger-wrap .toggler:checked + .burger > div {
+  transform: rotate(135deg);
+}
+.burger-wrap .toggler:checked + .burger > div:after,
+.burger-wrap .toggler:checked + .burger > div:before {
+  top: 0;
+  transform: rotate(90deg);
+}
+.burger-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+.burger-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 20;
+}
+.burger-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+.burger-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.burger-wrap .menu > div {
+  background: rgba(235, 235, 235, 0.9);
+  border-radius: 50%;
+  width: 300vw;
+  height: 300vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+.burger-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.burger-wrap .menu > div > div > ul {
+  padding: 0;
+}
+.burger-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: bold;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+}
+.burger-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.footer {
+  padding: 5px 0px;
+  text-align: center;
+  border-top: 1.5px solid black;
+  font-size: 10px;
+  line-height: 14px;
+  color: gray;
+}
+
+/*# sourceMappingURL=master-mobile.css.map */
