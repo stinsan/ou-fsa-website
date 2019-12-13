@@ -1,0 +1,27 @@
+.header {
+  padding-top: 40px;
+  background-image: url("../../img/culture-night-exec.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50%;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+.header .overlay {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  font-family: "Oswald";
+  letter-spacing: 4px;
+  background: rgba(68, 17, 160, 0.4);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=about-desktop.css.map */
