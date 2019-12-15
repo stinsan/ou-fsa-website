@@ -1,3 +1,16 @@
+// Fade-in transition
+@keyframes transitionIn {
+  from {
+    transform: rotateY(10deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
 .overlay {
   display: flex;
   align-items: center;
@@ -21,7 +34,8 @@
   text-transform: uppercase;
 
   .overlay p {
-      padding-left: 5%;
+    color: white;
+    margin-left: 5%;
   }
 }
 
@@ -64,8 +78,7 @@
 
   p {
     color: white;
-    padding-left: 5%;
-    margin: 0;
+    margin-left: 5%;
     font-family: "Oswald";
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -75,5 +88,35 @@
 }
 
 .meet-the-exec {
-  padding: 2% 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2% 15%;
+
+  .exec-image-display {
+    background-color: #EAA903;
+    min-width: 150px;
+    min-height: 150px;
+    margin: 10px;
+    transition-duration: 0.5s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      opacity: 0;
+    }
+  }
+
+  .exec-image-display:hover {
+    cursor: pointer;
+    background-color: rgba(68,17,160,1);
+
+    div {
+      animation: transitionIn 0.5s ease-in-out;
+      opacity: 1;
+    }
+  }
 }
