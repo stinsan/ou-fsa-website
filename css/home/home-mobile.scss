@@ -1,5 +1,18 @@
 $image: url("../../img/philippine-flag.jpeg");
 
+// Fade-in transition
+@keyframes transitionIn {
+  from {
+    transform: rotateY(10deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
 // Navigation bar hidden
 .navbar {
   display: none;
@@ -28,6 +41,7 @@ $image: url("../../img/philippine-flag.jpeg");
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: transitionIn 1s ease-in-out;
 
     .fsa,
     .ou {
