@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 720px)" href="css/home/home-desktop.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- animation on scroll-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="icon" href="img/logo.png" type="image/png">
   <title>OU Filipino Student Association</title>
@@ -46,8 +47,8 @@
   </div>
 
   <!-- Homepage -->
-  <div class="home" id="home">
-    <div class="container lax" data-lax-preset="home" data-lax-anchor="#home">
+  <div class="home" data-aos="fade-in">
+    <div class="container">
       <div class="ou">The University of Oklahoma</div>
       <div class="fsa">Filipino Student Association</div>
       <div class="socials">
@@ -61,6 +62,16 @@
   <div class="footer">
     © 2019 OU FSA. All Rights Reserved. <br>
     Maintained by Justin Santos.<br>
-    Last Updated: 15 December 2019.<br>
+    Last Updated: 17 December 2019.<br>
   </div>
+
+  <!-- Animation on scroll scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 750,
+      easing: 'ease-out',
+      once: true,
+    });
+  </script>
 </body>

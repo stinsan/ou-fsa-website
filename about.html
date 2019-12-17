@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 720px)" href="css/about/about-desktop.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- animation on scroll-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="icon" href="img/logo.png" type="image/png">
   <title>OU Filipino Student Association</title>
@@ -44,25 +45,25 @@
     </div>
   </div>
 
-  <div class="header">
+  <div class="header" data-aos="fade-in">
     <div class="overlay">
-      <p>About Us</p>
+      <p data-aos="fade-right">About Us</p>
     </div>
   </div>
-  <div class="about-us">
-    <div class="exec-pic">
+  <div class="about-us" data-aos="fade-in">
+    <div class="exec-pic" data-aos="fade-right">
       <img src="img/exec.jpg" alt=""></img>
     </div>
-    <div class="text">
+    <div class="text" data-aos="fade-left">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magnam voluptatum et iure ipsam recusandae laboriosam? Modi velit vel aut quo cupiditate labore placeat numquam veritatis et. Saepe totam quam ab quae suscipit a eligendi culpa quibusdam quasi praesentium. Architecto molestiae, consequatur cumque esse facere asperiores at laudantium ea ullam, harum laborum sapiente optio explicabo doloribus commodi mollitia soluta iusto perferendis atque est! Quae fugiat ut praesentium mollitia, iste dolore quam ea nemo sit quaerat animi, similique error temporibus maiores, corrupti aspernatur alias quis quos. Fugit impedit laboriosam iure quae non odio deserunt magnam maiores molestias temporibus consequatur nihil numquam, aperiam accusamus, adipisci est delectus, cupiditate! Quisquam fugit porro facilis, itaque dolore ipsam accusamus, minima quas hic cum, soluta libero facere quos repudiandae dolores expedita officia eligendi mollitia quaerat corrupti molestias! Voluptatum quis quisquam, aut quibusdam natus iusto modi soluta in quia laborum suscipit amet eius nobis aliquam voluptas ullam ad quaerat vel. Obcaecati, voluptatum cumque illum voluptates nulla ea, libero porro at similique fugit corrupti ipsum cupiditate sint corporis numquam reprehenderit totam reiciendis. Tempore ducimus ab, explicabo molestiae ad deserunt eum molestias, eligendi id, dolores perspiciatis. Non atque quam repellat nobis. Perspiciatis est possimus corporis autem aperiam amet laborum.
     </div>
   </div>
   <div class="meet-the-exec-header">
     <div class="overlay">
-      <p> Meet the Exec <p>
+      <p data-aos="fade-right"> Meet the Exec <p>
     </div>
   </div>
-  <div class="meet-the-exec">
+  <div class="meet-the-exec" data-aos="fade-up">
     <div class="exec-image-display">
       <p>JP Aycardo</p>
       <p>President</p>
@@ -87,6 +88,16 @@
   <div class="footer">
     © 2019 OU FSA. All Rights Reserved. <br>
     Maintained by Justin Santos.<br>
-    Last Updated: 15 December 2019.<br>
+    Last Updated: 17 December 2019.<br>
   </div>
+
+  <!-- Animation on scroll scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 750,
+      easing: 'ease-out',
+      once: true,
+    });
+  </script>
 </body>
