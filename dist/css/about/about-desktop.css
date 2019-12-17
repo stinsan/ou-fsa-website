@@ -92,17 +92,29 @@
   transition-duration: 0.5s;
   color: white;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.meet-the-exec .exec-image-display div {
+.meet-the-exec .exec-image-display p {
+  margin: 0;
   opacity: 0;
+}
+.meet-the-exec .exec-image-display p:nth-child(1) {
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.meet-the-exec .exec-image-display p:nth-child(2) {
+  font-family: "Open Sans";
+  font-size: 14px;
 }
 .meet-the-exec .exec-image-display:hover {
   cursor: pointer;
   background-color: #4411a0;
 }
-.meet-the-exec .exec-image-display:hover div {
+.meet-the-exec .exec-image-display:hover p {
   animation: transitionIn 0.5s ease-in-out;
   opacity: 1;
 }
