@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)" href="css/master/master-mobile.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 720px)" href="css/master/master-desktop.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)" href="css/events/events-desktop.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 720px)" href="css/events/events-desktop.css">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- animation on scroll-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <title>Events | OU Filipino Student Association</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html"><img src="img/logo.png"></img></a>
+    <a href="index.html"><button onclick="">Home</button></a>
+    <a href="about.html"><button onclick="">About</button></a>
+    <a href="events.html"><button onclick="events.html">Events</button></a>
+    <button onclick="#">Gallery</button>
+    <button onclick="#">Contact</button>
+  </div>
+  <!-- Hamburger -->
+  <div class="burger-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="burger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header" data-aos="fade-in">
+    <div class="overlay">
+      <p data-aos="fade-right">Events</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2019 OU FSA. All Rights Reserved. <br>
+    Maintained by Justin Santos.<br>
+    Last Updated: 30 December 2019.<br>
+  </div>
+
+  <!-- Animation on scroll scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 750,
+      easing: 'ease-out',
+      once: true,
+    });
+  </script>
+</body>
