@@ -50,6 +50,7 @@
   padding: 2% 5%;
 }
 .about-us .exec-pic {
+  box-shadow: 2px 2px 5px #A9A9A9;
   width: 20%;
   border: 8px solid #EAA903;
   display: flex;
@@ -80,15 +81,17 @@
 .meet-the-exec {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 2% 15%;
 }
 .meet-the-exec .exec-image-display {
   background-color: #EAA903;
+  box-shadow: 2px 2px 5px #A9A9A9;
+  border-radius: 6px;
   min-width: 150px;
   min-height: 150px;
-  margin: 10px;
+  margin: 12px;
   transition-duration: 0.5s;
   color: white;
   display: flex;
