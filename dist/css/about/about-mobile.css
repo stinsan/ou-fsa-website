@@ -86,6 +86,7 @@
 .meet-the-exec {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 2% 15%;
 }
