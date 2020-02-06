@@ -101,9 +101,10 @@
 
   .exec-image-display {
     background-color: #EAA903;
-    border-radius: 6px;
-    min-width: 100px;
-    min-height: 100px;
+    box-shadow: 2px 2px 5px #A9A9A9;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
     margin: 5px;
     transition-duration: 0.5s;
     color: white;
@@ -112,31 +113,57 @@
     align-items: center;
     justify-content: center;
 
-    p {
-      margin: 0;
+    .exec-image-overlay {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      position: absolute;
+      img {
+        width:50%;
+      }
+    }
+
+    .exec-text-overlay{
       opacity: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p {
+        text-align:center;
+        margin: 0;
+      }
     }
   }
 
-  .exec-image-display p:nth-child(1) {
-    font-size: 14px;
+  .exec-text-overlay p:nth-child(1) {
     font-family: "Oswald";
+    font-size: 14px;
+    letter-spacing: 2px;
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  .exec-image-display p:nth-child(2) {
+  .exec-text-overlay p:nth-child(2) {
     font-family: "Open Sans";
     font-size: 12px;
   }
 
   .exec-image-display:hover {
-    cursor: pointer;
     background-color: rgba(68,17,160,1);
 
-    p {
+
+    .exec-image-overlay {
+      animation: transitionOut 0.5s ease-in-out;
+      opacity: 0;
+    }
+
+    .exec-text-overlay {
       animation: transitionIn 0.5s ease-in-out;
       opacity: 1;
+
     }
   }
 }
