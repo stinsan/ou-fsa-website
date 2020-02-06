@@ -122,12 +122,14 @@
     justify-content: center;
 
     .exec-image-overlay {
+      animation: transitionIn 0.5s ease-in-out;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       opacity: 1;
       position: absolute;
+
       img {
         width:80%;
       }
@@ -160,7 +162,6 @@
 
   .exec-image-display:hover {
     background-color: rgba(68,17,160,1);
-
 
     .exec-image-overlay {
       animation: transitionOut 0.5s ease-in-out;
