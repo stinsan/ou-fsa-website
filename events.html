@@ -6,13 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)" href="css/master/master-mobile.css">
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 720px)" href="css/master/master-desktop.css">
-  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)" href="css/events/events-desktop.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 720px)" href="css/events/events-mobile.css">
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 720px)" href="css/events/events-desktop.css">
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans">
   <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- animation on scroll-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
   <link rel="icon" href="img/logo.png" type="image/png">
+
+  <!-- Calendar -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css" />
+
+  <script src="js/calendar.js"></script>
+
   <title>Events | OU Filipino Student Association</title>
 </head>
 
@@ -51,11 +61,15 @@
     </div>
   </div>
 
+  <div class="calendar-wrapper" data-aos="fade-up">
+    <div id="calendar"></div>
+  </div>
+
   <!-- Footer -->
   <div class="footer">
     © 2020 OU FSA. All Rights Reserved. <br>
     Maintained by Justin Santos.<br>
-    Last Updated: 30 December 2019.<br>
+    Last Updated: 6 February 2019.<br>
   </div>
 
   <!-- Animation on scroll scripts -->
@@ -67,4 +81,6 @@
       once: true,
     });
   </script>
+
+
 </body>

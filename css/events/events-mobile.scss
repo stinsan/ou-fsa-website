@@ -1,3 +1,7 @@
+.navbar {
+  display: none;
+}
+
 .overlay {
   display: flex;
   align-items: center;
@@ -11,7 +15,6 @@
 }
 
 .header {
-  padding-top: 40px;
   background-image: url("../../img/events-header.jpg");
   height: 55%;
   position: relative;
@@ -29,4 +32,28 @@
     color: white;
     margin-left: 5%;
   }
+}
+
+.calendar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+
+  #calendar {
+    width: 100%;
+    height: 100%;
+    margin: 20px 20px 20px 20px;
+  }
+}
+
+// Allows for multi-line event titles.
+// Overrides the CSS files that come with FullCalendar.
+.fc-event-time, .fc-event-title {
+padding: 0 1px;
+white-space: nowrap !important;
+}
+
+.fc-title {
+white-space: normal !important;
 }
