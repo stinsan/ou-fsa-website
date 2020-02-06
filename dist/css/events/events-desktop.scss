@@ -30,3 +30,26 @@
     margin-left: 5%;
   }
 }
+
+.calendar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+
+  #calendar {
+    width: 60%;
+    margin: 20px 100px 20px 100px;
+  }
+}
+
+// Allows for multi-line event titles.
+// Overrides the CSS files that come with FullCalendar.
+.fc-event-time, .fc-event-title {
+padding: 0 1px;
+white-space: nowrap !important;
+}
+
+.fc-title {
+white-space: normal !important;
+}
