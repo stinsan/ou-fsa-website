@@ -92,9 +92,10 @@
 }
 .meet-the-exec .exec-image-display {
   background-color: #EAA903;
-  border-radius: 6px;
-  min-width: 100px;
-  min-height: 100px;
+  box-shadow: 2px 2px 5px #A9A9A9;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
   margin: 5px;
   transition-duration: 0.5s;
   color: white;
@@ -103,25 +104,47 @@
   align-items: center;
   justify-content: center;
 }
-.meet-the-exec .exec-image-display p {
-  margin: 0;
-  opacity: 0;
+.meet-the-exec .exec-image-display .exec-image-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  position: absolute;
 }
-.meet-the-exec .exec-image-display p:nth-child(1) {
-  font-size: 14px;
+.meet-the-exec .exec-image-display .exec-image-overlay img {
+  width: 50%;
+}
+.meet-the-exec .exec-image-display .exec-text-overlay {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.meet-the-exec .exec-image-display .exec-text-overlay p {
+  text-align: center;
+  margin: 0;
+}
+.meet-the-exec .exec-text-overlay p:nth-child(1) {
   font-family: "Oswald";
+  font-size: 14px;
+  letter-spacing: 2px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.meet-the-exec .exec-image-display p:nth-child(2) {
+.meet-the-exec .exec-text-overlay p:nth-child(2) {
   font-family: "Open Sans";
   font-size: 12px;
 }
 .meet-the-exec .exec-image-display:hover {
-  cursor: pointer;
   background-color: #4411a0;
 }
-.meet-the-exec .exec-image-display:hover p {
+.meet-the-exec .exec-image-display:hover .exec-image-overlay {
+  animation: transitionOut 0.5s ease-in-out;
+  opacity: 0;
+}
+.meet-the-exec .exec-image-display:hover .exec-text-overlay {
   animation: transitionIn 0.5s ease-in-out;
   opacity: 1;
 }
